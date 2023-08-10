@@ -8,8 +8,8 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/HeshamAbdelalem/Interactive-card-details-form)
-- Live Site URL: [Add live site URL here](https://heshamabdelalem.github.io/Interactive-card-details-form/)
+- Solution URL: [here](https://github.com/HeshamAbdelalem/Interactive-card-details-form)
+- Live Site URL: [here](https://heshamabdelalem.github.io/Interactive-card-details-form/)
 
 ## My process
 
