@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap');
+
+body {
+  background-image: url('../images/bg-main-desktop.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+  min-width: 512px;
+}
+
+.card-front {
+  background-image: url('../images/bg-card-front.png');
+  width: 447px;
+  height: 245px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.card-back {
+  background-image: url('../images/bg-card-back.png');
+  background-size: cover;
+  width: 447px;
+  height: 245px;
+  color: #fff;
+}
+
+.card-back p {
+  top: 108px;
+  right: 50px;
+}
+
+container-detailes form {
+  height: 100vh;
+  transform: translate(50%, -50%);
+}
+
+:placeholder-shown {
+  font-style: italic;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 905px) {
+  body {
+    flex-direction: column;
+    background-image: url('../images/bg-main-mobile.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container-card {
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+  }
+  .card-front {
+    z-index: 1000;
+
+    order: 2;
+    position: relative;
+    top: -20%;
+    left: -15%;
+  }
+
+  .card-back {
+    z-index: 500;
+  }
+  .container-detailes {
+    width: 100%;
+  }
+}

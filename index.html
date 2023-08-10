@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="vh-100 d-flex">
+    <div
+      class="container-card w-50 d-flex flex-column align-items-center justify-content-center gap-3 mx-auto"
+    >
+      <div class="card-front p-4 d-flex flex-column justify-content-between">
+        <!-- <img src="images/bg-card-front.png" alt="" class="w-100" /> -->
+        <div class="card-circle"></div>
+        <div class="card-info d-flex flex-column gap-2">
+          <div class="card-num h2 text-center" id="cardFrontNumber">
+            0000 0000 0000 0000
+          </div>
+          <div class="card-name-exp d-flex justify-content-between">
+            <div class="card-name">
+              <p id="cardFrontName">JANE APPLESEED</p>
+            </div>
+            <div class="card-exp">
+              <p>
+                <span id="cardFrontExpMonth">00</span>/<span
+                  id="cardFrontExpYear"
+                  >00</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-back align-self-md-end position-relative">
+        <p class="position-absolute" id="cardBackCvc">123</p>
+      </div>
+    </div>
+
+    <div
+      class="container-detailes w-auto align-items-center p-4 d-flex flex-column justify-content-center"
+    >
+      <form class="w-75">
+        <label for="cardHolderName" class="text-uppercase"
+          >cardholder name</label
+        >
+        <input
+          type="text"
+          id="cardHolderName"
+          class="form-control p-2 mb-4"
+          placeholder="e.g Jane Appleseed"
+        />
+
+        <label for="cardNumber" class="text-uppercase">card number</label>
+        <input
+          type="number"
+          id="cardNumber"
+          class="form-control p-2 mb-4"
+          placeholder="e.g. 3542 1235 9874 1023"
+        />
+        <div class="d-flex gap-4 justify-content-between text-uppercase">
+          <div class="exp-date w-50">
+            <label for="expMonth">exp. date (MM/YY)</label>
+            <div class="d-flex gap-4">
+              <input
+                type="text"
+                class="form-control w-50 p-2"
+                placeholder="MM"
+              />
+              <input
+                type="text"
+                class="form-control w-50 p-2"
+                placeholder="YY"
+              />
+            </div>
+          </div>
+          <div class="cvc w-50">
+            <label for="cvc">cvc</label>
+            <input
+              type="text"
+              class="form-control p-2 w-50"
+              placeholder="e.g. 123"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- <div class="container text-center">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+      </div>
+    </div> -->
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
+
+<!-- 
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+  Completed state start 
+
+  Thank you!
+  We've added your card details
+  Continue
+   -->
