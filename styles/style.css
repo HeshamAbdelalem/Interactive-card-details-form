@@ -10,6 +10,11 @@ body {
   min-width: 512px;
 }
 
+.container-card {
+  max-width: 1440px;
+  /* margin-left: -50px !important; */
+}
+
 .card-front {
   background-image: url('../images/bg-card-front.png');
   width: 447px;
@@ -85,4 +90,13 @@ form label {
   .container-detailes {
     width: 100%;
   }
+}
+
+.invalid {
+  box-shadow: '0 0 0 0.1rem rgba(141, 0, 0, 0.5)';
+}
+
+.notvalid-msg {
+  font-size: 12px;
+  color: red;
 }
