@@ -56,8 +56,9 @@ form label {
   body {
     flex-direction: column;
     background-image: url('../images/bg-main-mobile.png');
+
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-position: top;
     padding: 2rem;
   }
